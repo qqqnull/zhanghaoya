@@ -1,0 +1,116 @@
+.category-menu{
+    display: flex;
+    align-items: center;
+}
+.category-menu-title{
+    margin-left:  10px;
+    width: 190px;
+}
+.category-menu-count{
+    width: 40px;
+    text-align: right;
+}
+.category-menu, .goods-link{
+    text-decoration: none;
+    color:  inherit;
+    user-select: none;
+}
+.el-card__body{
+    padding:  0;
+}
+.el-menu{
+    border: none;
+}
+.el-aside, .el-main{
+    padding: 10px;
+}
+.el-card{
+    margin-bottom: 10px;
+    box-shadow: none !important;
+}
+.goods-link{
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    padding: 5px 20px;
+}
+.goods-item{
+    border-bottom: 1px dashed #ebeef5;
+}
+.goods-title{
+    flex-grow: 1;
+    margin: 0 5px;
+    line-height: 30px;
+    word-break: break-all;
+}
+.goods-info{
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+}
+.goods-price, .goods-count{
+    min-width: 80px;
+}
+.goods-price{
+    color: #f56c6c;
+    font-weight: bold;
+    border-right: 1px solid #ebeef5;
+    text-align: right;
+}
+.goods-count{
+    color: #909399;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.category-grid-item{
+    width: 25% !important;
+}
+.category-grid-item a{
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+}
+.el-menu-item{
+    height: 35px;
+    line-height: 35px;
+}
+.el-menu-item:focus, .el-menu-item:hover, .goods-link:hover, .goods-link:hover .goods-count, .goods-link:hover .goods-price, .footer .el-menu-item.is-active{
+    outline: 0;
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+.notice{
+    margin-right: 10px;
+}
+#backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 200px;
+    display: none;
+    user-select: none;
+}
+#backToTop .icon-back-top{
+    font-size: 40px;
+}
+.home-aside{
+    position: sticky;
+    top: 90px;
+    width: 300px;
+    overflow-y: auto;
+    float: left;
+    margin: 0 10px;
+}
+.home-main{
+    width: 1430px;
+    margin-top:10px;
+    padding-bottom: 70px;
+}
+@media screen and (max-width: 1200px){
+    .home-main{
+        width: 100%;
+    }
+    .el-card__header{
+        padding: 5px 10px;
+    }
+}
